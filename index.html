@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Healthy food</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Vista splash -->
+  <div id="splash" class="valign-wrapper">
+    <div class="row ">
+      <div class="col s12">
+        <img src="assets/img/logo.png" alt="logo-healthy-food" class="responsive-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Inicio de sesión/registro -->
+  <main class="hide main" id="main">
+    <div class="container-main valign-wrapper">
+      <div class="row background">
+        <div class="col s12 center-align">
+          <img src="assets/img/logo-sin-fondo.png" alt="" class="responsive-img logo-form">
+        </div>
+        <form class="col s12 l12">
+          <div class="row">
+            <div class="input-field col s10 offset-s1 l10 offset-l1">
+              <i class="material-icons prefix">mail_outline</i>
+              <input id="user-email-login" type="email" class="validate">
+              <label for="user-email-login" data-error="Ingresa un correo válido" data-success="Correcto">Correo electrónico</label>
+            </div>
+            <div class="input-field col s10 offset-s1 l10 offset-l1">
+              <i class="material-icons prefix">lock_outline</i>
+              <input id="user-password-login" type="password" class="validate">
+              <label for="user-password-login" data-error="Ingresa de 4 a 8 caracteres" data-success="Correcto">Contraseña</label>
+            </div>
+            <div class="col s8 offset-s2 mt-2">
+              <button type="button" name="button" id="btn-mail-access" class="btn-outline">Entrar</button>
+            </div>
+          </div>
+        </form>
+          <!-- Botón google -->
+        <div class="col s8 offset-s2 mt-7 center-align">
+          <button type="button" name="button" id="btn-google">
+            <img src="assets/img/btn-google.png" alt="">
+          </button>
+        </div>
+          <!-- Botón crear cuenta-->
+        <div class="col s8 offset-s2 mt-2">
+          <a href="views/signup.html"><button type="button" name="button" id="btn-signup">Crear cuenta</button></a>
+        </div>
+
+
+
+      </div>
+    </div>
+  </main>
+
+
+
+
+<!-- SCRIPTS -->
+
+  <!-- firabase -->
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+  <script type="text/javascript" src="js/app.js"></script>
+
+
+</body>
+</html>

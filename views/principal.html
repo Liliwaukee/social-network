@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Healthy food</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Ubuntu:400,500,700" rel="stylesheet">
+</head>
+<body>
+
+<!--Principal view-->
+  <div id="network-container">
+
+    <!-- Header-->
+    <header id="header" class="center-align">
+      <div class="row">
+        <div class="col s12">
+          <img src="../assets/img/logo-horizontal.png" alt="" class="responsive-img logo-header">
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Saludo-->
+    <div id="greeting" class="">
+      <div class="row">
+        <div class="col s12">
+          <img src="https://dummyimage.com/50x50/52941f/fff" alt="" class="circle profile-photo">
+          <span id="greeting-msg">Rebeca</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Escribir post -->
+    <section >
+      <div class="card-panel hoverable valign-wrapper" id="write-post-section">
+        <div class=" row">
+          <div class="col s1">
+            <div class="profile-photo">
+            </div>
+          </div>
+          <div class="input-field col s10">
+            <textarea id="post-text" class="materialize-textarea" placeholder="¿En qué estás pensando?"></textarea>
+          </div>
+          <div class="row">
+            <div class="col s5 offset-s1">
+              <input type="file" id="files">
+            </div>
+            <div class="col s5">
+              <button type="button" name="button" id="btn-send-post">Publicar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Newsfeed-->
+    <section id="newsfeed" class="center-align">
+      <div class="row">
+        <div class="col s12 l5 offset-l1" id="show-post-section">
+          <div class="card-panel card-panel-post">
+            <img src="../assets/img/yogurt.png" alt="" class="responsive-img">
+            <hr>
+            <div class="icons-post">
+              <i class="material-icons icon">thumb_down</i>
+              <i class="material-icons icon">thumb_up</i>
+              <i class="material-icons icon">favorite</i>
+            </div>
+          </div>
+          <div class="card-panel card-panel-post">
+            <img src="../assets/img/fit.jpg" alt="" class="responsive-img">
+            <hr>
+            <div class="icons-post">
+              <i class="material-icons icon">thumb_down</i>
+              <i class="material-icons icon">thumb_up</i>
+              <i class="material-icons icon">favorite</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Nav-->
+    <nav class="nav-bottom hide-on-large-only">
+      <div class="row">
+        <div class="col s12 center-align">
+          <div class="col s3">
+            <a href="principal.html"><i class="material-icons prefix">home</i></a>
+          </div>
+          <div class="col s3">
+            <a href="chat.html"><i class="material-icons prefix">comment</i></a>
+          </div>
+          <div class="col s3">
+            <a href="follow.html"><i class="material-icons prefix">person_add</i></a>
+          </div>
+          <div class="col s3">
+            <a href="profile.html"><i class="material-icons prefix">person</i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+  </div>
+
+
+<!-- SCRIPTS -->
+
+  <!-- firabase -->
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+  <script type="text/javascript" src="../js/app.js"></script>
+
+
+</body>
+</html>

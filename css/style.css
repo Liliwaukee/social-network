@@ -1,0 +1,325 @@
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+hr {
+  border-top: 1px solid #AAFFA9;
+}
+
+#splash {
+  background: #AAFFA9;
+  background: -webkit-linear-gradient(to bottom, rgba(17, 255, 189, 0.8), rgba(170, 255, 169, 0.8));
+  background: linear-gradient(to bottom, rgba(17, 255, 189, 0.8), rgba(170, 255, 169, 0.8));
+  height: 100vh;
+  position: relative;
+  -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-delay: 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {top: 100%;}
+    to {top: 0;}
+}
+
+@keyframes example {
+  from {top: 100%;}
+  to {top: 0;}
+}
+
+
+
+/*--REGISTER SECTION*/
+
+.main {
+  background: url("../assets/img/breakfast.jpg");
+  background-size: cover;
+}
+
+.signup {
+  height: 100vh;
+}
+
+.container-main {
+  background-color: rgba(25, 25, 25, 0.8);
+  color: white;
+  height: 100vh;
+}
+
+
+#btn-login, #btn-signup, #btn-login-network {
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+}
+
+#btn-login, #btn-login-network {
+  border: 2px solid #AAFFA9;
+  background: none;
+}
+
+#btn-signup {
+  background: linear-gradient(-90deg, rgba(17, 255, 189, 0.9), rgba(170, 255, 169, 0.9));
+  border: none;
+  color: #484848;
+}
+
+.mt-2 {
+  margin-top: 2vh;
+}
+
+.mt-7 {
+  margin-top: 7vh;
+}
+
+.logo-form {
+  width: 25vh;
+}
+
+.logo-signup {
+  margin: 10vh 0;
+  width: 10vh;
+}
+
+
+
+
+#post-text {
+  padding: 0;
+}
+
+#show-post-section {
+  background: -webkit-linear-gradient(to bottom, rgba(17, 255, 189, 0.2), rgba(170, 255, 169, 0.2));
+  background: linear-gradient(to bottom, rgba(17, 255, 189, 0.2), rgba(170, 255, 169, 0.2));
+}
+
+
+#show-post-section i{
+  color: #B8B8B8;
+  float: right;
+  margin-left: 0.6em;
+  width: 0.7em;
+}
+
+
+#show-post-section .clicked {
+  color: #30AC18;
+}
+
+#show-post-section .card-panel-post p{
+  margin:  0;
+}
+
+.box-post {
+  background-color: white;
+}
+
+.icons-post {
+  margin-bottom: 1vh;
+}
+
+
+
+/*--NETWORK SECTION*/
+
+#network-container {
+  padding-bottom: 8vh;
+}
+
+
+/*--HEADER--*/
+#header {
+  background-color: #F8F8F8;
+  box-sizing: border-box;
+  box-shadow:  0 6px 10px 0 rgba(0, 0, 0, 0.05);
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo-header {
+  padding-top: 1vh;
+  width: 24vh;
+}
+
+
+/*--GREETING SECTION--*/
+#greeting {
+  background-color: white;
+  border-left: 4px solid #11FFBD;
+  height: 10vh;
+  margin-top: 11vh;
+  padding: 0.5vh 0 0 1vh;
+  width: 100%;
+}
+
+#greeting-msg {
+  color: #30AC18;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-left: 0.5em;
+}
+
+.profile-photo {
+  box-shadow: 6px 4px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+/*--WRITE POST SECTION--*/
+
+#write-post-section {
+  height: 17vh;
+  margin-top: 1vh;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#write-post-section .row{
+  margin-top: 0;
+  margin-bottom: 0.6em;
+  padding-top: 0;
+}
+
+
+
+/*--PROFILE SECTION--*/
+
+#profile-container {
+  background-color: white;
+  height: 100vh;
+}
+
+
+#profile-container  h5{
+  font-size: 1.2em;
+  margin: 0.3em 0;
+}
+
+#user-profile-container {
+  background: url(../assets/img/cover-girl.jpg) bottom;
+  background-size: contain;
+  height: 30vh;
+}
+
+#photo-profile {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20vh 0 0 2vw;
+  width: 30%;
+}
+
+#user-profile-name {
+
+  height: 10vh;
+}
+
+#user-health {
+  height: 15vh;
+}
+
+#imc {
+  background-color: #11FFBD;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-height: 8vh;
+}
+
+
+#ideal-weight {
+  background-color: #AAFFA9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#btn-google img{
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn-outline {
+  border: 2px solid #AAFFA9;
+  background: none;
+  border-radius: 5px;
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+
+
+
+/*--NAV--*/
+
+.nav-bottom {
+  box-sizing: border-box;
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid #30AC18;
+  height: 8vh;
+  position: fixed;
+  top: 92vh;
+  box-shadow: 8px 4px 8px 0 rgba(0, 0, 0, 0.4), 10px 6px 20px 0 rgba(0, 0, 0, 0.27);
+  z-index: 1000;
+}
+
+.nav-bottom i {
+  text-shadow: 2px 2px 4px #C0C0C0;
+  color: #707070;
+}
+
+/*--imagenes--*/
+.thumb{
+    height: 300px;
+    text-align: center;
+    margin: 10px 5px 0 0;
+}
+
+
+/*--follow--*/
+#btn-follow {
+  background: linear-gradient(-90deg, rgba(17, 255, 189, 0.9), rgba(170, 255, 169, 0.9));
+  border: none;
+  color: #484848;
+}
+
+#container-follow {
+  background: linear-gradient(-90deg, rgba(17, 255, 189, 0.9), rgba(170, 255, 169, 0.9));
+}
+
+
+/*--UPLOAD FILES--*/
+
+#files {
+  background: linear-gradient(-90deg, rgba(17, 255, 189, 0.9), rgba(170, 255, 169, 0.9));
+  border: none;
+  color: #484848;
+  width: 100%;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  border: 2px solid #AAFFA9;
+  background: none;
+  margin: 0;
+}
+
+#btn-send-post {
+  border: 2px solid #AAFFA9;
+  background: none;
+  box-shadow: 8px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: #30AC18;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

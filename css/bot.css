@@ -1,0 +1,31 @@
+
+h3, p {
+    font-family: sans-serif;
+    text-align: center;
+    color: #323330;
+    font-size:  5vh;
+    color: #30AC18;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-size: 3vh;
+}
+
+#output, #container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+#input {
+    border: none;
+    border-bottom: 3px solid #30AC18;
+    font-family: sans-serif;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:  3vh;
+}

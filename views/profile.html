@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Healthy food</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="profile-container">
+  <!-- Header-->
+  <header class="header center-align">
+    <div class="row">
+      <div class="col s12">
+        <img src="../assets/img/logo-horizontal.png" alt="" class="responsive-img logo-header">
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Section-->
+  <section id="user-profile-container">
+    <div class="row">
+      <div class="col s12">
+        <img src="../assets/img/fit.jpg" alt="" class="circle responsive-img" id="photo-profile">
+      </div>
+    </div>
+  </section>
+
+  <section id="user-profile-name">
+    <div class="row">
+      <div class="col s12"></div>
+    </div>
+  </section>
+
+  <section id="user-health">
+    <div class="row">
+      <div class="col s5 offset-s1" id="imc">
+        <span>IMC :</span>
+        <h6 id="user-imc"> 00 </h6>
+      </div>
+      <div class="col s5" id="ideal-weight">
+        <span>Peso ideal :</span>
+        <h6 id="user-ideal-weight"> 00 </h6>
+      </div>
+      <div class="row">
+        <div class="col s10 offset-s1">
+          <!-- IMC collapsible-->
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">loyalty</i>Calcular IMC y Calorias</div>
+              <div class="collapsible-body">
+                  <form>
+                    <p>
+                    <input name="group1" type="radio" id="user-woman" />
+                    <label for="user-woman">Mujer</label>
+                    <input name="group1" type="radio" id="user-man" />
+                    <label for="user-man">Hombre</label>
+                    </p>
+                    <label for="height-user">Ingresa tu altura en centímetros</label>
+                    <input type="number" id="height-user" placeholder="ej. 165">
+                    <label for="weight-user">Ingresa tu peso en kilográmos</label>
+                    <input type="number" id="weight-user" placeholder="ej. 50">
+                    <button type="button" name="button" id="btn-calculate-imc">Calcular</button>
+                  </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="logout">
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <button type="button" name="button" id="close-session" class="btn-outline">Cerrar sesión</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Nav-->
+  <nav class="nav-bottom">
+    <div class="row">
+      <div class="col s12 center-align">
+        <div class="col s3">
+          <a href="principal.html"><i class="material-icons prefix">home</i></a>
+        </div>
+        <div class="col s3">
+          <a href="chat.html"><i class="material-icons prefix">comment</i></a>
+        </div>
+        <div class="col s3">
+          <a href="follow.html"><i class="material-icons prefix">person_add</i></a>
+        </div>
+        <div class="col s3">
+          <a href="profile.html"><i class="material-icons prefix">person</i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+</div>
+
+
+
+<!-- SCRIPTS -->
+
+  <!-- firabase -->
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+  <script type="text/javascript" src="../js/app.js"></script>
+
+
+
+</body>
+</html>
