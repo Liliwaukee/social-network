@@ -261,7 +261,7 @@ $("#btn-calculate-imc").click(clearCalculate);
 function closeSession() {
 		firebase.auth().signOut()
 		.then(function(result) {
-	window.location.href = "index.html";
+	window.location.href = "../index.html";
 	})
 
 
