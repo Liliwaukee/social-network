@@ -25,6 +25,10 @@ Herramientas utilizadas:
 
 Pizarras, papel y lápiz
 
+![sketch1](assets/img/sketchPaper1.jpg)
+![sketch2](assets/img/sketchPaper2.jpg)
+
+
 <h3> Experiencia del usuario y aplicación de diseño de flujo de trabajo. </h3>
 
 Durante esta etapa, se definen los flujos de trabajo, el contenido y las interacciones de la aplicación.
@@ -56,3 +60,6 @@ El desarrollo se ha comunicado en gran medida a través de conceptos abstractos 
 
 Dando como resultado: Aplicación Terminada
 Herramientas utilizadas: Framework, Librerías
+
+
+![sketch1](assets/img/logo-corazon.png)
