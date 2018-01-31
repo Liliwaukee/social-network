@@ -62,6 +62,8 @@ function saveDataUser(user) {
 }
 
 
+
+
 //FUNCIÓN PARA REGISTRAR UN USUARIO NUEVO CON EMAIL Y CONTRASEÑA
 function signupWithMail() {
 	var $signupEmail = $("#signup-email").val();
@@ -71,7 +73,7 @@ function signupWithMail() {
 	firebase.auth()
 	.createUserWithEmailAndPassword($signupEmail, $signupPassword)
 	.then(function(result){
-		window.location.href = "views/principal.html";
+		window.location.href = "principal.html";
 	})
 	.catch(function(error) {
   // Handle Errors here.
@@ -79,8 +81,6 @@ function signupWithMail() {
   var errorMessage = error.message;
   // ...
 });
-
-
 
 }
 
