@@ -25,8 +25,8 @@ Herramientas utilizadas:
 
 Pizarras, papel y lápiz
 
-![sketch1](assets/img/sketchPaper1.jpg)
-![sketch2](assets/img/sketchPaper2.jpg)
+![sketch1](assets/img/sketchPaper1.jpeg)
+![sketch2](assets/img/sketchPaper2.jpeg)
 
 
 <h3> Experiencia del usuario y aplicación de diseño de flujo de trabajo. </h3>
