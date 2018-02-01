@@ -12,10 +12,12 @@ function loadPage() {
 };
 firebase.initializeApp(config);
 
+// Get a reference to the database service
+ var database = firebase.database();
+
 	var $btnGoogle = $("#btn-google")
 	$btnGoogle.click(function(){
 		authGoogle();
-		//views/network.html
 	});
 
 	function authGoogle() {
@@ -30,6 +32,7 @@ firebase.initializeApp(config);
 
 			window.location.href = "views/principal.html";
 			saveDataUser(result.user);
+			dataUserHealthy(result.user);
 
 		}).catch(function(error) {
 			// Handle Errors here.
@@ -41,6 +44,8 @@ firebase.initializeApp(config);
 			var credential = error.credential;
 		});
 	}
+//---FIN Firebase
+
 
 	$("#btn-signup-network").click(signupWithMail); //Botón que llama a la función de registrar usuario con email y contraseña
 	$("#btn-mail-access").click(loginWithMail); //Botón que llama a la función de accesar con mail
@@ -49,21 +54,7 @@ firebase.initializeApp(config);
 
 }
 
-//FUNCIÓN PARA GUARDAR LOS DATOS DE USUARIOS QUE SE REGISTRAN CON GOOGLE
-function saveDataUser(user) {
-	var userHealthy = {
-		uid: user.uid,
-		nombre: user.displayName,
-		email: user.email,
-		foto: user.photoURL,
-	}
-
-	firabase.database().ref("user-healthy/" + user.uid)
-	.set(userHealthy)
-}
-
-
-
+//------FIREBASE
 
 //FUNCIÓN PARA REGISTRAR UN USUARIO NUEVO CON EMAIL Y CONTRASEÑA
 function signupWithMail() {
@@ -103,30 +94,8 @@ function loginWithMail() {
 	});
 
 }
-/*
-//FUNCIÓN PARA GUARDAR LA INFORMACIÓN DE LOS USUARIOS REGISTRADOS CON EMAIL
-function dataUserHealthy() {
-		firebase.auth().onAuthStateChanged(function(user) {
-	  if (user) {
-	    // User is signed in.
-	    var displayName = user.displayName;
-	    var email = user.email;
-	    var emailVerified = user.emailVerified;
-	    var photoURL = user.photoURL;
-	    var isAnonymous = user.isAnonymous;
-	    var uid = user.uid;
-	    var providerData = user.providerData;
-	    // ...
-	  } else {
-	    // User is signed out.
-	    // ...
-	  }
-	});
-	console.log(displayName);
-}
-dataUserHealthy(); //Llamamos a la función
-*/
 
+//----FIN FIREBASE
 
 
 // FUNCIÓN PARA LA VISTA SPLASH AL CARGAR LA APP
