@@ -55,8 +55,9 @@ function saveDataUser(user) {
 		uid: user.uid,
 		nombre: user.displayName,
 		email: user.email,
-		foto: user.photoURL
+		foto: user.photoURL,
 	}
+
 	firabase.database().ref("user-healthy/" + user.uid)
 	.set(userHealthy)
 }
@@ -102,7 +103,6 @@ function loginWithMail() {
 	});
 
 }
-
 /*
 //FUNCIÓN PARA GUARDAR LA INFORMACIÓN DE LOS USUARIOS REGISTRADOS CON EMAIL
 function dataUserHealthy() {
@@ -122,6 +122,7 @@ function dataUserHealthy() {
 	    // ...
 	  }
 	});
+	console.log(displayName);
 }
 dataUserHealthy(); //Llamamos a la función
 */
@@ -156,7 +157,7 @@ function showPost() {  //post-container
 	$post2.append($iconDislike);
 	$post2.append($iconLike);
 	$post2.append($iconLove);
-	$postSection.append($post);
+	$postSection.prepend($post);
 	$post.append($post2);
 
 	$("#post-text").val(" "); //limpiamos el textarea
@@ -196,7 +197,7 @@ function showImage(image) {  //post-container
 	$post2.append($iconDislike);
 	$post2.append($iconLike);
 	$post2.append($iconLove);
-	$postSection.append($post);
+	$postSection.prepend($post);
 	$post.append($post2);
 
 	$("#post-text").val(" "); //limpiamos el textarea
@@ -269,6 +270,9 @@ function closeSession() {
 }
 $("#close-session").click(closeSession);
 
+
+//FUNCIÓN PARA CARGAR LA IMÁGEN
+
 function archivo(evt) {
     var files = evt.target.files; // FileList object
 
@@ -293,7 +297,11 @@ function archivo(evt) {
      }
 }
 
-//document.getElementById('files').addEventListener('change', archivo, false);
+	function init() {
+		document.getElementById('files').addEventListener('change', archivo, false);
+	}
+
+	$("#files").click(init);
 
 
 
