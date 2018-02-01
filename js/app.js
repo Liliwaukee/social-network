@@ -23,16 +23,20 @@ firebase.initializeApp(config);
 	function authGoogle() {
 		var provider = new firebase.auth.GoogleAuthProvider();
 		authentification(provider);
+
 	}
 
 	function authentification(provider) {
 		firebase.auth()
 			.signInWithPopup(provider)
 			.then(function(result) {
-
+				// This gives you a Google Access Token. You can use it to access the Google API.
+			  var token = result.credential.accessToken;
+			  // The signed-in user info.
+			  var user = result.user;
+			  // ...
 			window.location.href = "views/principal.html";
-			saveDataUser(result.user);
-			dataUserHealthy(result.user);
+			infoUser(result.user);
 
 		}).catch(function(error) {
 			// Handle Errors here.
@@ -66,6 +70,7 @@ function signupWithMail() {
 	.createUserWithEmailAndPassword($signupEmail, $signupPassword)
 	.then(function(result){
 		window.location.href = "principal.html";
+
 	})
 	.catch(function(error) {
   // Handle Errors here.
@@ -85,6 +90,7 @@ function loginWithMail() {
 		firebase.auth().signInWithEmailAndPassword($loginEmail, $loginPassword)
 		.then(function(result){
 			window.location.href = "views/principal.html";
+
 		})
 		.catch(function(error) {
 	  // Handle Errors here.
@@ -94,6 +100,29 @@ function loginWithMail() {
 	});
 
 }
+
+
+function infoUser(user) {
+
+	var user = firebase.auth().currentUser;
+	var name, email, photoUrl, uid, emailVerified;
+
+	if (user != null) {
+		name = user.displayName;
+		email = user.email;
+		photoUrl = user.photoURL;
+		emailVerified = user.emailVerified;
+		uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+		// this value to authenticate with your backend server, if
+		// you have one. Use User.getToken() instead.
+	}
+
+
+
+}
+
+
+
 
 //----FIN FIREBASE
 
